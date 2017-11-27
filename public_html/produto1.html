@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BOOM Music Store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/jquery-3.2.1.js"></script>
+        <script src="JS/popper.js"></script>
+        <script src="JS/bootstrap.js"></script>
+        <script src='JS/jquery.elevatezoom.js'></script>
+        <link rel="stylesheet" href="CSS/bootstrap.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="imagens/icon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+        <style>
+            .notification{                
+                position:absolute;
+                left: 79.5%;
+                background-color: red;
+                padding-left: 6px;
+                font-size: 13px;
+                color:white;
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;
+            }
+            /*set a border on the images to prevent shifting*/
+            #gal01 img{border:2px solid white;}
+
+            /*Change the colour*/
+            .active img{border:2px solid #333 !important;}
+
+            .custom {
+                width: 300px !important;
+            }
+        </style>        
+    </head>
+    <body>        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" height="90" width="90"/></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Cordas</a>
+                        <a class="dropdown-item" href="#">Sopro</a>
+                        <a class="dropdown-item" href="#">Percurção</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guitarras</a>
+                        <a class="dropdown-item" href="#">Teclados</a>
+                        <a class="dropdown-item" href="#">Baixos</a>
+                        <a class="dropdown-item" href="#">Acessórios</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato </a>
+                </li>
+            </ul> 
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 btn btn-outline-light" type="submit">Procurar</button>
+            </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entrar/Cadastrar </a>
+                </li>
+                <li class="nav-item">
+                    <div class="notification">3</div>
+                    <a class="nav-link" href="#"><i class="fa fa-shopping-cart" style="font-size:30px;" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- O PRODUTO -->
+        <br/>
+        <div class="container-fluid">
+            <h3 class="text-center">Guitarra Les Paul Gibson</h3>
+            <br/>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl col-1"><!-- Gallery -->
+                    <div id="js-gallery" class="gallery">
+
+                        <!--Gallery Hero-->
+                        <div class="gallery__hero">
+                            <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a>
+
+                            <img src="imagens/p1i1.jpg">
+                        </div>
+                        <!--Gallery Hero-->
+
+                        <!--Gallery Thumbs-->
+                        <div class="gallery__thumbs">
+                            <a href="imagens/p1i1.jpg" data-gallery="thumb" class="is-active">
+                                <img src="imagens/p1i1.jpg">
+                            </a>
+                            <a href="imagens/p1i2.jpg" data-gallery="thumb">
+                                <img src="imagens/p1i2.jpg">
+                            </a>
+                            <a href="imagens/p1i3.jpg" data-gallery="thumb">
+                                <img src="imagens/p1i3.jpg">
+                            </a>
+                        </div>
+                        <!--Gallery Thumbs-->
+
+                    </div><!--.gallery-->
+                    <!-- Gallery -->
+
+                </div><!--.container-->
+                <div class=" col-2">
+                    <h1 class="text-muted"><s>R$6.999,00</s></h1>
+                    <h2 class="text-warning font-weight-bold">R$5.999,00</h2>
+                    <div class="row" style="width:150px;">
+                        <p class="text-warning text-right">3x de R$1.999,00 sem juros</p>
+                    </div>
+                    <br/>
+                    <p><button type="button" class="btn btn-primary font-weight-bold custom">Comprar <i class="fa fa-shopping-cart" style="font-size:20px;" aria-hidden="true"></i></button></p>
+                    <p><button type="button" class="btn btn-secondary font-weight-bold custom" disabled>Adicionado ao Carrinho <i class="fa fa-check" aria-hidden="true"></i></button></p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="container-fluid">
+            <h3 class="text-center">Descrição</h3>
+            <br/>            
+        </div>
+        <div class="container-fluid" style="padding:5%;">
+            <p class="font-weight-bold">Guitarra Gibson Les Paul &lsquo.50s Tribute 2016 T Chrome Satin Vintage Sunburst</p>
+            <p>A Les Paul Studio &lsquo.50s Tribute 2016 T possui o tradicional corpo em Mogno da Les Paul com uma textura granulada, acabamento satin no tampo de Maple, assim como o braço em Mogno no perfil das Les Paul da década de 50 e escala em Rosewood com 22 trastes. Madeiras selecionadas, aliadas às tarraxas no seu verde vintage e a confiável ponte Tune-O-Matic mantém sua afinação e entonação estáveis, mesmo durante as apresentações mais longas.</p>
+            <p class="font-weight-bold">Especificações:</p>
+            <p>Corpo: Mogno, com tampo em Maple <br/>
+                Braço: Mogno, com perfil dos modelos dos anos 50
+                Escala: Rosewood<br/>
+                Trates: 22<br/>
+                Captadores: Humbuckers 490R e 498T<br/>
+                Ferragens: Niqueladas<br/>
+                Tarraxas: Tradicionais tarraxas verde Grover<br/>
+                Ponte: Tune-o-Matic com Tailpiece Stop Bar</p>
+            <p class="font-weight-bold">
+                *Acompanha Gigbag Gibson.<br/>
+                Garantia: 3 meses.<br/>
+                *Imagens meramente ilustrativas.</p>
+        </div>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+        <script  src="js/index.js"></script>
+        <footer>
+            <div class="container-fluid bg-dark">
+                <h6 class="text-secondary text-center" style="padding:5%;">BOOM Music Store - Copyright 2017</h6>
+            </div>
+        </footer>        
+    </body>
+</html>
