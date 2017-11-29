@@ -50,7 +50,7 @@ and open the template in the editor.
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Produtos
                     </a>
@@ -75,7 +75,7 @@ and open the template in the editor.
             </form>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="cadastro.html">Entrar/Cadastrar </a>
+                    <a class="nav-link active" href="#">Entrar/Cadastrar </a>
                 </li>
                 <li class="nav-item">
                     <div class="notification">3</div>
@@ -83,82 +83,67 @@ and open the template in the editor.
                 </li>
             </ul>
         </nav>
-        <!-- O PRODUTO -->
         <br/>
-        <div class="container-fluid">
-            <h3 class="text-center">Violino Eagle VE244 4/4</h3>
-            <br/>
-        </div>
-        <div class="container">
+        <div class="container-fluid" style="width:80%;">
             <div class="row">
-                <div class="col-xl col-1"><!-- Gallery -->
-                    <div id="js-gallery" class="gallery">
-
-                        <!--Gallery Hero-->
-                        <div class="gallery__hero">
-                            <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a>
-
-                            <img src="imagens/p3i1.jpg">
+                <div class="col bg-light">
+                    <h4 class="text-center">Logar</h4>
+                    <form style="width:80%;">
+                        <div class="form-group">
+                            <label>Usuário</label>
+                            <input class="form-control mr-sm-2" type="text" name="usuario" placeholder="Usuário">
                         </div>
-                        <!--Gallery Hero-->
-
-                        <!--Gallery Thumbs-->
-                        <div class="gallery__thumbs">
-                            <a href="imagens/p3i1.jpg" data-gallery="thumb" class="is-active">
-                                <img src="imagens/p3i1.jpg">
-                            </a>
-                            <a href="imagens/p3i2.jpg" data-gallery="thumb">
-                                <img src="imagens/p3i2.jpg">
-                            </a>
-                            <a href="imagens/p3i3.jpg" data-gallery="thumb">
-                                <img src="imagens/p3i3.jpg">
-                            </a>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input class="form-control mr-sm-2" type="password" name="senha" placeholder="Senha">
                         </div>
-                        <!--Gallery Thumbs-->
-
-                    </div><!--.gallery-->
-                    <!-- Gallery -->
-
-                </div><!--.container-->
-                <div class=" col-2">
-                    <h1 class="text-muted"><s>R$902,00</s></h1>
-                    <h2 class="text-warning font-weight-bold">R$739,99</h2>
-                    <div class="row" style="width:150px;">
-                        <p class="text-warning text-right">3x de R$246,70 sem juros</p>
-                    </div>
-                    <br/>
-                    <p><button type="button" class="btn btn-primary font-weight-bold custom">Comprar <i class="fa fa-shopping-cart" style="font-size:20px;" aria-hidden="true"></i></button></p>
-                    <p><button type="button" class="btn btn-secondary font-weight-bold custom" disabled>Adicionado ao Carrinho <i class="fa fa-check" aria-hidden="true"></i></button></p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Mantenha-me conectado
+                            </label>                            
+                        </div>
+                        <button type="submit" class="btn btn-primary">Logar</button>
+                    </form>
+                </div>
+                <div class="col bg-light">
+                    <h4 class="text-center">Cadastrar</h4>
+                    <form style="width:80%;">
+                        <div class="form-group">
+                            <label>Usuário</label>
+                            <input class="form-control mr-sm-2" type="text" name="usuario" placeholder="Usuário">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input class="form-control mr-sm-2" type="text" name="usuario" placeholder="Usuário">
+                        </div>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input class="form-control mr-sm-2" type="password" name="senha" placeholder="Senha">
+                        </div>
+                        <div class="form-group">
+                            <label>Repetir Senha</label>
+                            <input class="form-control mr-sm-2" type="password" name="senha" placeholder="Senha">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Li e aceito os termos de uso
+                            </label>                            
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Desejo receber Emails sobre novidades e promoções da loja
+                            </label>                            
+                        </div>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </form>
                 </div>
             </div>
         </div>
         <br/>
-        <div class="container-fluid">
-            <h3 class="text-center">Descrição</h3>
-            <br/>            
-        </div>
-        <div class="container-fluid" style="padding:5%;">
-            <p class="font-weight-bold">Violino Eagle VK 644</p>
-            <p>O Violino Eagle VK 644 é um violino Envelhecido clássico profissional construído com madeiras nobres para oferecer uma experiência única.<br/>
-            Este modelo de Violino Profissional da Eagle é construído artesanalmente e tem como principais atributos seu tampo de Spruce Maciço selecionado, lateral e fundo de Maple trabalhado, seu arco profissional e seus outros componentes de Ébano selecionado. As madeiras com acabamento envelhecido lhe conferem um belíssimo visual e uma sonoridade impressionante.<br/>
-            E para conservar e prolongar sua vida útil, o Eagle VK 644 é acompanhado de um luxuoso estojo retangular com higrômetro que lhe garante um perfeito acondicionamento.</p>
-            <p class="font-weight-bold">Especificações:</p>
-            <p>Tampo (Top) Abeto Maciço (Solid Spruce)<br/>
-            Lateral e Fundo (Back & Side) Maple Trabalhado<br/>
-            Braço (Neck) Maple<br/>
-            Micro Afinação 4 Cordas<br/>
-            Acabamento (Finish) Envelhecido<br/>
-            Arco Profissional de Madeira Octogonal com "e;Olho Paris"e;<br/>
-            Estojo Térmico (Thermal Case) Super Luxo Retangular com Higrômetro<br/>
-            Acompanha Espalera<br/>
-            Espelho Ébano<br/>
-            Queixeira Ébano<br/>
-            Estandarte Ébano com "e;Olho Paris"e;<br/>
-            Cravelhas Ébano com "e;Olho Paris"e;<br/>
-            Garantia: 3 meses.</p>
-        </div>
         <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-        <script  src="js/index.js"></script>
         <footer>
             <div class="container-fluid bg-dark">
                 <h6 class="text-secondary text-center" style="padding:5%;">BOOM Music Store - Copyright 2017</h6>
